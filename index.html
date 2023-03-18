@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    <section class="relative">
+        <img class="w-full h-screen object-cover md:object-none" src="./img/weather.jpg" alt="">
+        <div class="absolute inset-0 w-full h-screen">
+            <h1 class="text-slate-200 text-5xl text-center mt-3 animate__heartBeat">Weather Forecast <span class="text-base animate-pulse">Hourly</span></h1>
+            <!-- search city -->
+            <div class="card h-[60%] w-[90%] md:w-[50%] mx-auto mt-6 p-3" data-aos="fade-up" data-aos-anchor-placement="bottom-center">
+                <div class="flex justify-center items-center mt-4">
+                    <input id="input" class="w-[70%] p-2 border-none bg-[rgba(0,0,0,0.2)] rounded-xl" type="text"
+                        placeholder="City Name">
+                    <button id="btn" onclick="searchByBtn()" class="border p-2 rounded-xl ml-2">Search</button>
+                </div>
+                <!-- showing temperature -->
+                <div id="tempContainer" class="">
+                    <!-- <div class="mt-2 flex flex-col justify-evenly items-center ">
+                        <img class="w-16" src="./img/sun.png" alt="">
+                        <h1 class="text-7xl text-slate-100 font-bold" style="font-family: 'Montserrat', sans-serif;">
+                            32<span>&#176;</span>C <sub class="text-lg font-medium">Clouds</sub></h1>
+                    </div>
+                    <div class="flex justify-evenly mt-5 flex-wrap text-slate-300">
+                        <div class="flex flex-col items-center">
+                            <p class="text-2xl font-semibold">City</p>
+                            <p class="font-medium">Khulna</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="text-2xl font-semibold">Temp</p>
+                            <p class="font-medium">120<span>&#176;</span>F</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="text-2xl font-semibold">Pressure</p>
+                            <p class="font-medium">45</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="text-2xl font-semibold">Humidity</p>
+                            <p class="font-medium"><span>71</span>%</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="text-2xl font-semibold">Sunrise</p>
+                            <p class="font-medium">Khulna</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <p class="text-2xl font-semibold">Sunset</p>
+                            <p class="font-medium">Khulna</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
